@@ -14,7 +14,7 @@ import com.dmburu.kcb.payments.MpesaWalletDisbursementService.model.ResponseRoot
 public class B2CRestController {
 	@RequestMapping(path="/api/sendToMpesa",method=RequestMethod.POST,produces={MediaType.APPLICATION_JSON_VALUE},consumes=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseRoot add(@RequestBody RequestRoot request) {
-		//TO DO Create user in DB
+		//TO DO Create call service class to call daraja API
 		
 		ResponseRoot resp = new ResponseRoot();
 		
