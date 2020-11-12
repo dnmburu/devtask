@@ -2,7 +2,7 @@ package com.dmburu.kcb.payments.MpesaWalletDisbursementService.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Header {
+public class RequestHeader {
 	@JsonProperty("messageID")
 	public String getMessageID() {
 		return this.messageID;

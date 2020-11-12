@@ -2,7 +2,7 @@ package com.dmburu.kcb.payments.MpesaWalletDisbursementService.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class TransactionInfo {
+public class RequestTransactionInfo {
 	@JsonProperty("companyCode")
 	public String getCompanyCode() {
 		return this.companyCode;

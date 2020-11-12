@@ -2,15 +2,15 @@ package com.dmburu.kcb.payments.MpesaWalletDisbursementService.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class RequestPayload {
+public class RequestPayloadBody {
 	@JsonProperty("transactionInfo")
-	public TransactionInfo getTransactionInfo() {
+	public RequestTransactionInfo getTransactionInfo() {
 		return this.transactionInfo;
 	}
 
-	public void setTransactionInfo(TransactionInfo transactionInfo) {
+	public void setTransactionInfo(RequestTransactionInfo transactionInfo) {
 		this.transactionInfo = transactionInfo;
 	}
 
-	TransactionInfo transactionInfo;
+	RequestTransactionInfo transactionInfo;
 }

@@ -2,26 +2,26 @@ package com.dmburu.kcb.payments.MpesaWalletDisbursementService.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Root {
+public class RequestRoot {
 	@JsonProperty("header")
-	public Header getHeader() {
+	public RequestHeader getHeader() {
 		return this.header;
 	}
 
-	public void setHeader(Header header) {
+	public void setHeader(RequestHeader header) {
 		this.header = header;
 	}
 
-	Header header;
+	RequestHeader header;
 
 	@JsonProperty("requestPayload")
-	public RequestPayload getRequestPayload() {
+	public RequestPayloadBody getRequestPayload() {
 		return this.requestPayload;
 	}
 
-	public void setRequestPayload(RequestPayload requestPayload) {
+	public void setRequestPayload(RequestPayloadBody requestPayload) {
 		this.requestPayload = requestPayload;
 	}
 
-	RequestPayload requestPayload;
+	RequestPayloadBody requestPayload;
 }
