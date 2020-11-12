@@ -31,7 +31,7 @@ public class DarajaService {
 	}
 
 	public ResponseRoot sendMpesaRequest(RequestRoot request) {
-
+		//TO DO make get token call to daraja API then b2c payment request
 		ResponseRoot resp = new ResponseRoot();
 
 		return resp;
